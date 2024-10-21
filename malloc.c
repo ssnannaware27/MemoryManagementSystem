@@ -36,6 +36,8 @@ void init_memory_system() {
 /* The function returns the block that fits the requested size and is free.
  * If no such block is found, it returns the last block, allowing the memory system to allocate new memory if needed.
  */
+
+/* time complexity for this function will be O(n) */
 meta_ptr find_suitable_block(meta_ptr *last, size_t size) {
         meta_ptr b = base;
         while (b && !(b->free && b->size >= size)) {
