@@ -154,7 +154,7 @@ meta_ptr extend_heap(meta_ptr last, size_t size) {
  *
  * ----------------------------------------------------------------------------------------------------------------------
  */
-void *malloc(size_t size) {
+void *new_malloc(size_t size) {
     	meta_ptr block, last;
     	size_t s;
     	s = allign4(size);
