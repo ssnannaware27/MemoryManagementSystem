@@ -21,11 +21,11 @@
  * ------------------------------------------------------------------------------------
  */
 
-void *my_calloc(size_t number, size_t size) {
+void *new_calloc(size_t number, size_t size) {
     	size_t *new;
     	size_t s, i;
 
-    	new = my_malloc(number * size);
+    	new = new_malloc(number * size);
 
     	if (new) {
 
