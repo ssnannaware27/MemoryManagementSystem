@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "malloc.c"
 #include "free.c"
-#include "include/realloc.h"
+#include "main.h"
 
 /*************************************************************************************************
  
