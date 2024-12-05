@@ -74,7 +74,7 @@ meta_ptr merge_blocks(meta_ptr block)
  *
  * ---------------------------------------------------------------------------------------------------------------------
  */
-void free(void *ptr)
+void my_free(void *ptr)
 {
     if (is_addr_valid(ptr))
     {
