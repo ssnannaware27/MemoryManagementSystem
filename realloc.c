@@ -63,7 +63,7 @@ void copy_data(meta_ptr src, meta_ptr dest)
  ***********************************************************************************************
  */
 
-void *realloc(void *p, size_t size)
+void *new_realloc(void *p, size_t size)
 {
     	size_t s;
     	meta_ptr new_block, old_block;
@@ -72,7 +72,7 @@ void *realloc(void *p, size_t size)
     	// Checking if the passed pointer is NULL
     	if (!p)
     	{
-        	return malloc(size);
+        	return new_malloc(size);
     	}
 
     	// Checking if the passed pointer is a valid memory address or not
@@ -110,7 +110,7 @@ void *realloc(void *p, size_t size)
             		}
             		else
             		{
-                		new_ptr = malloc(s);
+                		new_ptr = new_malloc(s);
                 	
                 		if (!new_ptr)
                     			return NULL;
